@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Concert</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="title">
+      <span>Travis Scott Concert</span>
+      <a href="https://www.gmail.com">Sign in</a>
+    </div>
+    <div class="container">
+      <div class="image">
+        <img
+          src="https://pbs.twimg.com/profile_images/634514155261833216/czgYrPLQ_400x400.jpg"
+          alt="image of artist"
+        />
+      </div>
+      <div class="forms">
+        <table>
+          <thead>
+            <tr>
+              <th>Seat type</th>
+              <th>Cost</th>
+              <th>Number of people</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <select id="seat-type">
+                  <option value="Section A - 10,000 INR">
+                    Section A - 10,000 INR
+                  </option>
+                  <option value="Section B - 7,000 INR">
+                    Section B - 7,000 INR
+                  </option>
+                  <option value="Section C - 5,000 INR">
+                    Section C - 5,000 INR
+                  </option>
+                </select>
+              </td>
+              <td>
+                <div class="cost">Total Cost: 0 INR</div>
+              </td>
+              <td>
+                <select id="number-of-people">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                </select>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="venues">
+          <form>
+            <p>Select a venue:</p>
+            <input type="radio" id="venue1" name="venue" value="Nalasopara" />
+            <label for="venue1">Nalasopara</label><br />
+
+            <input type="radio" id="venue2" name="venue" value="Dharavi" />
+            <label for="venue2">Dharavi</label><br />
+
+            <input type="radio" id="venue3" name="venue" value="Mira Road" />
+            <label for="venue3">Mira Road</label><br />
+
+            <input type="radio" id="venue4" name="venue" value="Mankhurd" />
+            <label for="venue4">Mankhurd</label><br />
+          </form>
+        </div>
+        <div class="submit-button">
+          <button><a href="https://www.bookmyshow.com">Submit</a></button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
